@@ -183,8 +183,3 @@ def update(weights, state, n):
     a = dot(weights, state)
     state[n] = activate(a[n])
     return state
-
-for point in fixed_points(connections(1)):
-    print(point)
-    print(neighbours(connections(1), point))
-    print()
